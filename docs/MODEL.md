@@ -3,7 +3,7 @@ Since K-Means clustering effectively groups users according to numerical charact
 
 ## Model Training
 1. Preprocess the data by normalizing numerical values and encoding categorical features.
-2. Determine the ideal number of clusters ({k`) using the Elbow Method and Silhouette Score.
+2. Determine the ideal number of clusters (`k`) using the Elbow Method and Silhouette Score.
 3. Use `k=75` to train the K-Means model (based on the Elbow Method).
 
 ## Assessment
