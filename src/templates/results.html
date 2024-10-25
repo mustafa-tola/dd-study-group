@@ -19,9 +19,9 @@
                 {% for group in matched_groups %}
                 <li>
                     <div class="group-info">
-                            <span>Group Name: <strong>{{ group.group_name }}</strong></span>
-                            <span class="match-percent">Match Percentage: <strong>{{ group.match_percent }}%</strong></span>
-                        </div>
+                        <span>Group Name: <strong>{{ group.group_name }}</strong></span>
+                        <span class="match-percent">Match Percentage: <strong>{{ group.match_percent }}%</strong></span>
+                    </div>
                     <!-- Add a join button for each group -->
                     <form action="/join_group" method="POST" style="margin-top: 10px;">
                         <input type="hidden" name="group_name" value="{{ group.group_name }}">
@@ -42,14 +42,6 @@
             </ul>
         </div>
 
-        <!-- Create Study Group Button -->
-        <form action="/create_group" method="POST">
-            <input type="hidden" name="name" value="{{ name }}">
-            <input type="hidden" name="skill_level" value="{{ skill_level }}">
-            <input type="hidden" name="topics" value="{{ topics }}">
-            <input type="hidden" name="days" value="{{ days }}">
-            <input type="hidden" name="hours" value="{{ hours }}">
-            <button id="create-group-btn" type="submit">Create a New Group</button>
         </form>
     </div>
 </body>

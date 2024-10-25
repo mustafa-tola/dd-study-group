@@ -200,57 +200,6 @@ def join_group():
     # Redirect to the homepage or another page after joining the group
     return redirect(url_for('group_page', group_name=group_name, cluster_id=cluster_id))
 
-# Route to create a new study group within the predicted cluster
-@app.route('/create_group', methods=['POST'])
-def create_group():
-    # Get the user's information from the form
-    name = request.form['name']
-    skill_level = request.form['skill_level']
-    selected_topics = request.form.getlist('topics')
-    selected_days = request.form.getlist('days')
-    selected_hours = request.form.getlist('hours')
-    latitude = float(request.form['latitude'])
-    longitude = float(request.form['longitude'])
-    preferred_group_size = request.form['preferred_group_size']
-
-    # Step 1: Preprocess the user input into the format required by KMeans
-    feature_vector = preprocess_input(skill_level, selected_topics, latitude, longitude, preferred_group_size, selected_days, selected_hours)
-
-    # Step 2: Predict the cluster for the new study group
-    predicted_cluster = kmeans_model.predict([feature_vector])[0]
-
-    global users_data
-
-    # Create a new group name, for example, based on the user's name and group ID
-    new_group_name = f"Group_{name}_{len(users_data) + 1}"
-
-    # Create a new row for the user and the new study group
-    new_group = {
-        'UserID': len(users_data) + 1,  # Assign a new user ID
-        'Cluster': predicted_cluster,   # Assign the predicted cluster
-        'Skill_Level': skill_level,
-        'Study_Group': new_group_name,
-        'Big Data': 1 if 'Big Data' in selected_topics else 0,
-        'Data Analysis': 1 if 'Data Analysis' in selected_topics else 0,
-        'Machine Learning': 1 if 'Machine Learning' in selected_topics else 0,
-        'Python': 1 if 'Python' in selected_topics else 0,
-        'SQL': 1 if 'SQL' in selected_topics else 0,
-        'Statistics': 1 if 'Statistics' in selected_topics else 0,
-        'Latitude': latitude,
-        'Longitude': longitude,
-        'Preferred_Group_Size': preferred_group_size,
-        'Days_Available': ','.join(selected_days),
-        'Hours_Available': ','.join(selected_hours)
-    }
-
-    # Add the new study group and user to the DataFrame
-    users_data = users_data.append(new_group, ignore_index=True)
-
-    # Save the updated data to the CSV file
-    users_data.to_csv(csv_file, index=False)
-
-    # Redirect to the homepage or another page after creating the group
-    return redirect(url_for('form'))
 
 # Route to display users in a study group by group name and cluster ID
 @app.route('/group')

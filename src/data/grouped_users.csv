@@ -799,17 +799,3 @@ Unnamed: 0,Latitude,Longitude,Skill_Level,Preferred_Group_Size,Cluster,Study_Gro
 980.0,1.5638606041658685,1.0727371483932773,1,2,19.0,Group_Big Data,"Big Data,Python",Wednesday,"Hour_1,Hour_2,Hour_4,Hour_5,Hour_6,Hour_7,Hour_9,Hour_10,Hour_13,Hour_16,Hour_18,Hour_20,Hour_22,Hour_23",
 475.0,0.5507511124999955,0.6330899856403688,1,2,19.0,Group_Big Data,"Big Data,Machine Learning","Monday,Tuesday","Hour_1,Hour_3,Hour_4,Hour_6,Hour_7,Hour_9,Hour_12,Hour_13,Hour_20,Hour_22,Hour_23",
 160.0,0.6585032867916474,1.4005498435246857,1,2,19.0,Group_Big Data,"Big Data,Python","Tuesday,Wednesday,Thursday,Saturday,Sunday","Hour_1,Hour_2,Hour_6,Hour_7,Hour_9,Hour_10,Hour_14,Hour_16,Hour_17,Hour_19,Hour_20,Hour_21,Hour_22,Hour_23",
-,20.0,20.0,Beginner,Small,,Group_Big Data,['Big Data'],"['Thursday', 'Friday']","['Hour_2', 'Hour_3']",801.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,['Big Data'],"['Thursday', 'Friday']","['Hour_2', 'Hour_3']",802.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,['Big Data'],"['Thursday', 'Friday']","['Hour_2', 'Hour_3']",803.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,['Big Data'],"['Thursday', 'Friday']","['Hour_2', 'Hour_3']",804.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,['Big Data'],"['Thursday', 'Friday']","['Hour_2', 'Hour_3']",805.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,"['Big Data', 'Statistics']","['Tuesday', 'Wednesday', 'Thursday']","['Hour_1', 'Hour_2', 'Hour_3']",806.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,"['Big Data', 'Statistics']","['Tuesday', 'Wednesday', 'Thursday']","['Hour_1', 'Hour_2', 'Hour_3']",807.0
-,20.0,20.0,Beginner,Small,,Group_Big Data,"['Big Data', 'Statistics']","['Tuesday', 'Wednesday', 'Thursday']","['Hour_1', 'Hour_2', 'Hour_3']",808.0
-,20.0,20.0,Beginner,Small,,Group_SQL,"['Big Data', 'SQL']","['Tuesday', 'Wednesday']","['Hour_1', 'Hour_2']",809.0
-,20.0,20.0,Beginner,Small,,Group_SQL,"['Big Data', 'SQL']","['Tuesday', 'Wednesday']","['Hour_1', 'Hour_2']",810.0
-,20.0,20.0,Beginner,Small,38.0,Group_SQL,"['Big Data', 'SQL']","['Tuesday', 'Wednesday']","['Hour_1', 'Hour_2']",811.0
-,80.0,80.0,Beginner,Small,38.0,Group_Statistics,['Machine Learning'],"['Tuesday', 'Wednesday', 'Thursday']","['Hour_1', 'Hour_3']",812.0
-,10.0,10.0,Beginner,Small,29,Group_Python,"['Big Data', 'Machine Learning']","['Tuesday', 'Wednesday']","['Hour_1', 'Hour_2']",813.0
-,10.0,10.0,Beginner,Small,29,Group_Python,"['Big Data', 'Machine Learning']","['Tuesday', 'Wednesday']","['Hour_1', 'Hour_2']",814.0
